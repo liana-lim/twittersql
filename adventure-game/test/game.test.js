@@ -9,34 +9,34 @@ describe('Game', function() {
     game = new Game()
   })
 
-  xit('has a nodes object to keep track of nodes', function() {
+  it('has a nodes object to keep track of nodes', function() {
     expect(game.nodes).to.eql({})
   })
 
-  xit('has a startingPoint property that is initially null', function() {
+  it('has a startingPoint property that is initially null', function() {
     expect(game.startingPoint).to.be.null
   })
 
   describe('addNode', function() {
-    xit('adds the node to an internal nodes object', function() {
+    it('adds the node to an internal nodes object', function() {
       game.addNode('fo','fo text')
       expect(game.nodes.fo).to.be.instanceOf(Node)
     })
 
-    xit('throws an error if you try to regester two nodes with the same name', function() {
+    it('throws an error if you try to regester two nodes with the same name', function() {
       expect(function() {
         game.addNode('foo', 'bar')
         game.addNode('foo', 'could be different bar')
       }).to.throw(Error)
     })
 
-    xit('returns the node that was added', function() {
+    it('returns the node that was added', function() {
       // we need to return the Node that was added to make things 
       // easier later on
       expect(game.addNode('fluf','cats')).to.be.instanceOf(Node)
     })
 
-    xit('sets the starting point the first time addnode is called', function() {
+    it('sets the starting point the first time addnode is called', function() {
       var shouldBeFirst = game.addNode('whatever', 'whatever')
       var shouldBeSecond = game.addNode('foo', 'bar')
 
@@ -64,7 +64,7 @@ describe('Game', function() {
 
     // all we want to do is assert that the Node class gets a message
     // from the Game class.
-    xit('calls connect on the first node', function() {
+    it('calls connect on the first node', function() {
       var node1 = game.addNode('foo1', 'bar1')
       game.addNode('foo2', 'bar2')
 
@@ -79,7 +79,7 @@ describe('Game', function() {
       expect(connectHasBeenCalled).to.be.true
     })
 
-    xit('throws an error if it cannot find the node', function() {
+    it('throws an error if it cannot find the node', function() {
       expect(function() {
         game.connect('asdf', 'fdsa', 'some condition')
       }).to.throw(Error)
