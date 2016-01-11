@@ -17,3 +17,6 @@
 
 - [Monday TF Review with Gabriel](https://youtu.be/eDSpDBbTHcg)
 
+### Choose your own adventure
+
+- [Review](http://youtu.be/5g761fFaGXI)
