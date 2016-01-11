@@ -1,7 +1,7 @@
 var expect = require('chai').expect;
 var Node = require('../node');
 
-describe('Node', function() {
+xdescribe('Node', function() {
 
   // first let's just set up some basic assertions 
   // about how the "Node" class works

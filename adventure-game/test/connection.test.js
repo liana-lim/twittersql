@@ -2,7 +2,7 @@ var expect = require('chai').expect
 var Connection = require('../connection')
 var Node = require('../node')
 
-describe('Connection', function() {
+xdescribe('Connection', function() {
   var aNode
 
   before(function() {
