@@ -20,3 +20,7 @@
 ### Choose your own adventure
 
 - [Review](http://youtu.be/5g761fFaGXI)
+
+### Data Types and Structures
+
+- [Lecture Part I: History, Hardware, Encodings, ADTs, Linked Lists, Queues](https://youtu.be/tyE2cON3mHo)
