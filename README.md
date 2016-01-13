@@ -28,3 +28,7 @@
 - [Review Part I: Queues, Linked Lists](https://www.youtube.com/watch?v=MX7fT_A5LDM)
 - [Open Q&A: Queues, Linked Lists](https://youtu.be/uN9kET1DcQ0)
 - [Lecture Part II: Hash Tables, Trees](https://youtu.be/YIGodqJ0nXY)
+
+### DOM
+
+- [Lecture](http://youtu.be/EIAq7wKxsXI)
