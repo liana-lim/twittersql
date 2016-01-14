@@ -32,3 +32,4 @@
 ### DOM
 
 - [Lecture](http://youtu.be/EIAq7wKxsXI)
+- [Selector.js Review](https://youtu.be/WhVEZPsOP4I)
