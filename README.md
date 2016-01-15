@@ -38,3 +38,6 @@
 
 - [Lecture](https://youtu.be/XEcQZJtcbVc)
 - [Review](https://youtu.be/xGWhM1aNArg)
+
+### Game Of Life
+- [Lecture](http://youtu.be/T7CPcLnYWjg)
