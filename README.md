@@ -25,9 +25,9 @@
 ### Data Types and Structures
 
 - [Lecture Part I: History, Hardware, Encodings, ADTs, Linked Lists, Queues](https://youtu.be/tyE2cON3mHo)
-- [Review Part I: Queues, Linked Lists](https://www.youtube.com/watch?v=MX7fT_A5LDM)
 - [Open Q&A: Queues, Linked Lists](https://youtu.be/uN9kET1DcQ0)
 - [Lecture Part II: Hash Tables, Trees](https://youtu.be/YIGodqJ0nXY)
+- [Review Parts I & II](https://www.youtube.com/watch?v=MX7fT_A5LDM)
 
 ### DOM
 
@@ -37,3 +37,4 @@
 ### Sorting
 
 - [Lecture](https://youtu.be/XEcQZJtcbVc)
+- [Review](https://youtu.be/xGWhM1aNArg)
