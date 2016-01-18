@@ -34,6 +34,7 @@ GameOfLife.prototype.step = function(){
   // on the board and determine, based on its neighbors,
   // whether the cell should be dead or alive in the next
   // evolution of the game
+  var self = this; 
   var x_arr = [];
   var y_arr = [];
   for (var x = 0; x < this.width; x++) {
@@ -119,11 +120,9 @@ GameOfLife.prototype.clear = function(){
 GameOfLife.prototype.enableAutoPlay = function () {
   // Start Auto-Play by running the 'step' function
   // automatically repeatedly every fixed time interval
-  if (typeof this.interval === 'undefined'){
-    var self = this; 
-    this.interval = setInterval(function(){
-      self.step();
-    }, 200);
+  if (!this.interval){
+    var selfStep = this.step.bind(this); 
+    this.interval = setInterval(selfStep, 200);
   }
   else {
     clearInterval(this.interval); 
@@ -132,7 +131,7 @@ GameOfLife.prototype.enableAutoPlay = function () {
 };
 
 GameOfLife.prototype.pause = function(){
-    if (typeof this.interval !== undefined){
+    if (this.interval){
     clearInterval(this.interval); 
     this.interval = undefined; 
   }
