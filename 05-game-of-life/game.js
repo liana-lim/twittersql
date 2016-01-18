@@ -120,11 +120,10 @@ GameOfLife.prototype.enableAutoPlay = function () {
   // Start Auto-Play by running the 'step' function
   // automatically repeatedly every fixed time interval
   if (typeof this.interval === 'undefined'){
-    var autoPlay = this; 
+    var self = this; 
     this.interval = setInterval(function(){
-      autoPlay.step();
+      self.step();
     }, 200);
-    this.autoPlay = true; 
   }
   else {
     clearInterval(this.interval); 
