@@ -46,3 +46,7 @@
 
 - [Intro Lecture](http://youtu.be/GftPouqj8o8)
 - [Node Shell Review](https://youtu.be/94a1rLcymYA)
+
+### Express (Twitter.js)
+
+- [Lecture](https://youtu.be/cyAo1IkY9vU)
