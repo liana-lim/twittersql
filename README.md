@@ -45,3 +45,4 @@
 ### Node
 
 - [Intro Lecture](http://youtu.be/GftPouqj8o8)
+- [Node Shell Review](https://youtu.be/94a1rLcymYA)
