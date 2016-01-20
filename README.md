@@ -51,3 +51,4 @@
 
 - [Lecture](https://youtu.be/cyAo1IkY9vU)
 - [Review](https://youtu.be/0NvankAwgHU)
+- [Open Q&A](https://youtu.be/h3JANRdXuLg)
