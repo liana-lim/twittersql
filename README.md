@@ -52,3 +52,8 @@
 - [Lecture](https://youtu.be/cyAo1IkY9vU)
 - [Review](https://youtu.be/0NvankAwgHU)
 - [Open Q&A](https://youtu.be/h3JANRdXuLg)
+
+
+### SQL 
+- [Omri's Lecture](https://www.youtube.com/watch?v=_ueZX1g1MrY)
+- [Review](https://www.youtube.com/watch?v=ha10pFr88Vc&feature=youtu.be)
