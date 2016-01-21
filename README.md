@@ -57,3 +57,6 @@
 ### SQL 
 - [Omri's Lecture](https://www.youtube.com/watch?v=_ueZX1g1MrY)
 - [Review](https://www.youtube.com/watch?v=ha10pFr88Vc&feature=youtu.be)
+
+### FQL
+- [Intro Lecture](http://youtu.be/6oY6BpKm6RU)
