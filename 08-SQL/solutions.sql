@@ -226,7 +226,7 @@ HAVING num_roles > 4;
 ##For each year, count the number of movies in that year that had only female actors. 
 ## For movies where no one was casted, you can decide whether to consider them female-only.
 
-
+-- includes movies with no actors 
 SELECT m.year, COUNT(*) femaleOnly
 FROM movies m
 WHERE not exists
@@ -237,7 +237,7 @@ AND r.movie_id = m.id
 AND a.gender = 'M')
 GROUP BY m.year;  
 
-
+-- includes movies with no actors
 SELECT year, COUNT(*)
 FROM movies
 WHERE id NOT IN (
@@ -246,6 +246,21 @@ WHERE id NOT IN (
   WHERE gender = 'M'
   AND a.id = actor_id
 )
+
+-- excludes movies with no actors
+SELECT m.year, count(*) femaleOnly
+FROM movies m
+WHERE NOT EXISTS (SELECT *
+  FROM roles AS ma, actors AS a
+  WHERE a.id = ma.actor_id
+    AND ma.movie_id = m.id
+    AND a.gender = 'M')
+AND EXISTS (SELECT *
+  FROM roles AS ma, actors AS a
+  WHERE a.id = ma.actor_id
+    AND ma.movie_id = m.id
+    AND a.gender = 'F')
+GROUP BY m.year;
 
 
 
