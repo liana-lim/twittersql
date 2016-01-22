@@ -64,3 +64,4 @@
 
 ### Practical Promises
 - [Lecture](https://youtu.be/n9_GfSimnSE)
+- [Live Review](https://youtu.be/iGTXK57XKkk)
