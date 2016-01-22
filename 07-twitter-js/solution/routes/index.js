@@ -2,6 +2,7 @@
 var express = require('express');
 var router = express.Router();
 var tweetBank = require('../tweetBank');
+var Database = require('../../models/index.js')
 
 module.exports = function makeRouterWithSockets (io) {
 
@@ -32,7 +33,8 @@ module.exports = function makeRouterWithSockets (io) {
 
   // single-tweet page
   router.get('/tweets/:id', function(req, res, next){
-    var tweetsWithThatId = tweetBank.find({ id: Number(req.params.id) });
+    var tweetsWithThatId = Database.Tweet.findTweetByID(req.params.id);
+    console.log(tweetsWithThatId);
     res.render('index', {
       title: 'Twitter.js',
       tweets: tweetsWithThatId // an array of only one element ;-)
