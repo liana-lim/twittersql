@@ -61,3 +61,6 @@
 ### FQL
 - [Intro Lecture](http://youtu.be/6oY6BpKm6RU)
 - [Review](https://youtu.be/xeuSGWtA2NY)
+
+### Practical Promises
+- [Lecture](https://youtu.be/n9_GfSimnSE)
