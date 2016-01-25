@@ -70,13 +70,65 @@ Tweet.belongsTo(User);
 // 	});
 // };
 
-Tweet.findOne({where: {id: 1 }}).then(function(tweet){
-		return tweet;
-	});
+// Tweet.findOne({where: {id: 1 }}).then(function(tweet){ //find one tweet by ID
+//     return tweet;
+// 	});
+
+// Tweet.findAll({ //tweet formatted Tweet - User, need username
+//   include:[{
+//     model: User,
+//     where: {name: 'Zeke'}
+//   }]
+//  }).then(function(p){
+//   return JSON.stringify(p);
+// })
+
+// User.findAll({ //tweet formatted User - Tweet, need the userID, but function takes username
+//   include:[{
+//     model: Tweet,
+//     where: {userId: 1}
+//   }]
+//  }).then(function(p){
+//   console.log(JSON.stringify(p));
+// })
+
+
+// User.findAll({where: {name: 'Zeke'}}).then(function(users){
+//   console.log(JSON.stringify(users));
+// });
+
+
+// User.findAll({ include: [Tweet] }).then(function(users){ //find all tweets
+// 	console.log(JSON.stringify(users));
+//   return JSON.stringify(users);
+// });
+
 
 // User.findAll({ include: [Tweet] }).then(function(users){
-//	console.log(JSON.stringify(users));
+//     var testStringParse = JSON.stringify(users);
+//     var testBodyParse = JSON.parse(testStringParse);
+//   var resultsArray = [];
+//   testBodyParse.forEach(function(obj, i){
+//     var newObj = { name: obj.name};
+//     obj.Tweets.forEach(function(eachTweet){
+//       newObj.id = eachTweet.id;
+//       newObj.text = eachTweet.tweet;
+//     });
+//     resultsArray.push(newObj);
+//   });
+//   // console.log(resultsArray);
+//   return resultsArray;
 // });
+
+// Tweet.findAll({ //tweet formatted Tweet - User, need username
+//   include:[{
+//     model: User,
+//     where: {name: 'Zeke'}
+//   }]
+//  }).then(function(bodyparse){
+//     bodyparse[0].dataValues.tweet;
+//     bodyparse[0].dataValues.User.dataValues.name;
+// })
 
 module.exports = {
     User: User,
